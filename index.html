@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Abdul Abdi | School Board Director & IT Expert</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Open+Sans:wght@400;600&display=swap');
+
+    body {
+      background-color: #fafafa;
+      color: #222;
+      font-family: 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 80px auto;
+      background: #fff;
+      padding: 60px 70px;
+      border-radius: 14px;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+      animation: fadeIn 1.2s ease;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 2.4rem;
+      text-align: center;
+      color: #111;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      text-align: center;
+      color: #444;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+    }
+
+    p {
+      font-size: 1.05rem;
+      color: #333;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .contact-info {
+      margin-top: 50px;
+      text-align: center;
+      border-top: 1px solid #eee;
+      padding-top: 30px;
+    }
+
+    .contact-info p {
+      margin: 10px 0;
+      font-size: 1rem;
+    }
+
+    a {
+      color: #111;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Toggle Button */
+    .toggle-container {
+      text-align: right;
+      padding-right: 30px;
+    }
+
+    .toggle-btn {
+      cursor: pointer;
+      background: #111;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .toggle-btn:hover {
+      background: #333;
+    }
+
+    /* Dark Mode */
+    body.dark {
+      background-color: #121212;
+      color: #eaeaea;
+    }
+
+    body.dark .container {
+      background: #1e1e1e;
+      box-shadow: 0 0 30px rgba(255,255,255,0.05);
+    }
+
+    body.dark a {
+      color: #f5f5f5;
+    }
+
+    body.dark .toggle-btn {
+      background: #eaeaea;
+      color: #111;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        padding: 40px 25px;
+        margin: 50px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="toggle-container">
+    <button class="toggle-btn" id="modeToggle">🌙 Dark Mode</button>
+  </div>
+
+  <div class="container">
+    <h1>Abdul Abdi</h1>
+    <h2>School Board Director | IT Expert | Entrepreneur | Community Leader</h2>
+
+    <p>
+      Abdul Abdi is a husband, father, entrepreneur, and public servant who serves
+      on the Minneapolis Public Schools Board of Education, where he currently
+      chairs the Finance Committee and provides oversight of a $1 billion budget
+      dedicated to equity and student success.
+    </p>
+
+    <p>
+      With a degree in Computer Science, over 25 years of IT leadership
+      experience, and more than a decade as a Software Architect, Abdul brings
+      deep technical expertise and strategic insight to complex organizational
+      challenges. He has also completed Executive Education at Harvard Business
+      School and holds multiple IT and business certifications.
+    </p>
+
+    <p>
+      Abdul’s career reflects a commitment to bridging technology, governance,
+      entrepreneurship, and education to create lasting impact across one of
+      Minnesota’s largest school districts and the broader community.
+    </p>
+
+    <div class="contact-info">
+      <p>📧 <a href="mailto:aabdi10@gmail.com">aabdi10@gmail.com</a></p>
+      <p>🌐 <a href="https://www.abdulabdi.com" target="_blank">www.abdulabdi.com</a></p>
+      <p>📞 612-963-8042</p>
+    </div>
+  </div>
+
+  <script>
+    const toggleBtn = document.getElementById('modeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+      toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+  </script>
+</body>
+</html>
